@@ -1,6 +1,7 @@
 # Прототип веб-сервиса
 
-Запуск прототипа нужно производить в контейнере Docker Папка recomendation\manage.py\ -runserver lockalhost\127.0.0.1 
+Запуск прототипа нужно производить в контейнере Docker 
+Папка recomendation\manage.py\ -runserver lockalhost\127.0.0.1 
 
 Используются следующие приложения:
 
