@@ -6,6 +6,14 @@
 * Блокнот Jupiter Notebook - #Model_approved - модель рекомендательной системы
 * в папке leader_19 хранятся файлы UI/UX модели - решения
 
+Запуск прототипа нужно производить в контейнере Docker
+Папка recomendation\manage.py\ -runserver lockalhost\127.0.0.1
+Используются следующие приложения:
+- Linux Ubuntu 20.04
+- Python 3.10
+- MySQL 8.0.33
+- Django 4.2
+
 ## Документы относящиеся к решению задачи 19 (сслыки):
 * [Презентация команды](https://docs.google.com/presentation/d/1qTCoBzU_WCnPSJPC0l-eH560b5l9X_kd/edit?usp=sharing&ouid=112422430492651344612&rtpof=true&sd=true)
 * [Файловое хранилище Google Disk](https://drive.google.com/drive/folders/1ikY26bVlWOZOoOYL1t-Mu0T6zwFhe7n6?usp=sharing)
