@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+{% if error_message %}
+<p class ="alert alert-danger">
+        <strong>{{ error_message }}</strong>
+</p>
+{% endif %}
+
+
+<div class="row"> 
+<div class="col-6">
+        <form  method ="post">
+        {% csrf_token %}
+        {% for question in question %}
+        {{ question.question_text }}
+        <form  method ="post">
+        {% csrf_token %}
+        {% for choice in question.choice_set.all %}
+        <div class ="check-form">
+                <input type ="radio" name ="choice" class ="form-check-input" id ="choice{{ forloop.counter }}"
+                        value ="{{ choice.votes }}" />
+                <label for ="choice{{ forloop.counter }}">{{ choice.choice_text }}</label>
+       
+ </div>
+
+<!--  {% if page.number = 10}
+        <a class ="btn btn-success" href ="{% url 'app:results' %}">FINISH</a>
+
+<li class ="list-group-item">
+                {{ choice.choice_text }} <span>{{ choice.votes }}
+                        vote{{ choice.votes | pluralize }}</span>
+        </li>
+
+-->
+
+            {% endfor %}
+        </form>
+        {% endfor %}
+        </form>
+
+    </div>
+</div>
+
+
+  {% include "./pagination.html" with page=question %} 
+
+{% endblock %}
+
+
+
+<!--        <a class ="btn btn-success" href ="{% url 'app:results' %}">
+            Send answers</a>
+
+-->

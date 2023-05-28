@@ -1,0 +1,22 @@
+@keyframes header_anim {
+  from {
+    transform: translateX(-120%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.header{
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-color: #02f;
+}
+

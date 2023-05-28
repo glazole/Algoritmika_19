@@ -1,0 +1,10 @@
+body {
+    min-height: 100vh;
+    background-color: black;
+    background-position: center center;
+    background-size: cover;
+}
+
+li a {
+    color: blue;
+}

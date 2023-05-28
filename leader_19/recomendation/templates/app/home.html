@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class ="card text-center">
+        <div class ="card-body">
+                <h1>Добро пожаловать на рекомендательный сервис "Московское долголетие"</h1>
+
+        <p>Выберите опцию:</p>
+
+                <a class ="btn btn-dark" href ="{% url 'app:test' %}">
+                        Пройти тест</a>
+                <a class ="btn btn-dark" href ="{% url 'app:catalog' %}">
+                        Каталог занятий</a>
+                <a class ="btn btn-dark" href ="{% url 'app:search' %}">
+                        Поиск занятий</a>
+
+
+        </div>
+    </div>
+
+{% endblock %}

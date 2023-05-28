@@ -1,0 +1,36 @@
+<!doctype  html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"  crossorigin="anonymous">
+    <title>{% block title %}Московское долголетие: сервис рекомендаций{% endblock %}</title>
+    {% block extrahead %} {% endblock %}
+
+</head>
+<body>
+    <!--NavBar-->
+    {% include 'partials/_navbar.html'%}
+        <div class ="container">
+                                {% block content %}{% endblock %}
+        </div>
+
+        </div>
+<script type="text/javascript" src='/home/leader_19/recomendation/public/js/main.js'></script>
+</body>
+</html>
+
+
+<!--    {% load static %}
+    <link rel="icon" type="image/png" sizes="50x50" href="{% static 'app/images/favicon.png' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app/style.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+                <div class ="row">
+                        <div class =".col-md-10 m-auto">
+                               
+                        </div>
+
+-->
